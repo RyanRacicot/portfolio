@@ -1,0 +1,33 @@
+.main {
+    border-radius: 5px;
+    height: 100%;
+    padding: 2em;
+    overflow-y: scroll;
+
+    .card {
+        max-width: 396px;
+        width: 80vw;
+        height: max-content;
+        margin: 2em 1em;
+
+        .title {
+            margin-top: 1em;
+        }
+
+        .dummy-img {
+            margin: 0 auto;
+            width: auto;
+            height: 30vw;
+            max-height: 252px;
+            max-width: 348px;
+            // max-height: 348px;
+            // max-width: 496px;
+
+            background-color: darkgray;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 496;
+        }
+    }
+}

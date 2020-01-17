@@ -1,0 +1,30 @@
+.main {
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  line-height: 100%;
+}
+.main .divider {
+  margin: 0.3em 0;
+  display: inline;
+  border: 0.5px solid #000;
+  border-radius: 5px;
+}
+.main .btn {
+  color: #000;
+  display: inline-block;
+  padding: 0.5em;
+  transition: all 0.35s;
+}
+.main .btn:focus {
+  box-shadow: none;
+  outline: 0 !important;
+}
+.main .btn:hover {
+  transform: scale(1.15);
+}
+.main .left-end {
+  border-radius: 5px 0 0 5px;
+}
+.main .right-end {
+  border-radius: 0 5px 5px 0;
+}

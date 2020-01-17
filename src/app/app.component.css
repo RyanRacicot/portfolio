@@ -1,0 +1,17 @@
+.bg {
+  background-color: lightgrey;
+  height: 100%;
+  width: 100%;
+}
+#animation-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+nav {
+  position: absolute;
+  width: max-content;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

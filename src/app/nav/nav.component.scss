@@ -1,0 +1,40 @@
+$bg-color: white;
+$text-color: black;
+
+.main {
+
+    background-color: $bg-color;
+    border-radius: 5px 5px 0 0;
+    line-height: 100%;
+    .divider {
+        margin: .3em 0;
+        display: inline;
+        border: .5px solid $text-color;
+        border-radius: 5px;   
+    }
+
+    .btn {
+        color: $text-color;
+        display: inline-block;
+        padding: .5em;
+        // background-color: white;
+        transition: all .35s;
+    }
+
+    .btn:focus {
+        box-shadow: none;
+        outline: 0 !important;
+    }
+    
+    .btn:hover {
+        // font-weight: bold;
+        transform: scale(1.15);
+    }
+    
+    .left-end {
+        border-radius: 5px 0 0 5px;
+    }
+    .right-end {
+        border-radius: 0 5px 5px 0;
+    }
+}

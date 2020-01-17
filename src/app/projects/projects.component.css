@@ -1,0 +1,27 @@
+.main {
+  border-radius: 5px;
+  height: 100%;
+  padding: 2em;
+  overflow-y: scroll;
+}
+.main .card {
+  max-width: 396px;
+  width: 80vw;
+  height: max-content;
+  margin: 2em 1em;
+}
+.main .card .title {
+  margin-top: 1em;
+}
+.main .card .dummy-img {
+  margin: 0 auto;
+  width: auto;
+  height: 30vw;
+  max-height: 252px;
+  max-width: 348px;
+  background-color: darkgray;
+  border-radius: 5px;
+}
+.main .card img {
+  max-width: 496;
+}
