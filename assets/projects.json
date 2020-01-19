@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "title": "Polyphonic Real-Time Harmonizer",
+            "github": "https://github.com/RyanRacicot/harmonizer",
+            "imgs": [
+                "harmonizer.png"
+            ],
+            "description": "A virtual instrument designed for live performance which retunes an input vocal signal to various output signals determined from midi input."
+        },
+        {
+            "title": "Rachel Kobernick Portfolio",
+            "github": "https://github.com/RachelKobernick/Portfolio",
+            "imgs": [
+                "rachel-portfolio.png"
+            ],
+            "description": "Editable portfolio website for career Opera singer. Responsive and elegant web design that works at all screen sizes.",
+            "url": "rachelkobernick.com"
+        },
+        {
+            "title": "Hitch",
+            "bitbucket": "https://bitbucket.org/Ryan-Racicot/pool-it/src/master/",
+            "imgs": [
+                "hitch_1.jpg",
+                "hitch_3.jpg",
+                "hitch_2.jpg"
+            ],
+            "description": "A cross-platform mobile application designed for college students coordinating carpooling trips as an alternative to expensive existing forms of long-distance travel. Created using Google's Flutter."
+        },
+        {
+            "title": "Repertoire Vault",
+            "github": "https://github.com/RyanRacicot/RepertoireVault",
+            "imgs": [
+                "repertoire-vault.png"
+            ],
+            "description": "Online tool designed for career musicians to track and share their performance ready repertoire",
+            "url": "https://immense-tor-11241.herokuapp.com/"
+        }
+    ]
+}
