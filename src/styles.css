@@ -91,7 +91,7 @@ body {
   overflow: hidden;
 }
 .pick-up {
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .pick-up:hover {
   box-shadow: 5px 5px 5px grey;

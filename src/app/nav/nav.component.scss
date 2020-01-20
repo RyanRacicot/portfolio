@@ -2,7 +2,7 @@ $bg-color: white;
 $text-color: black;
 
 .main {
-
+    box-shadow: 5px 5px 5px grey, -5px 5px 5px grey;
     background-color: $bg-color;
     border-radius: 5px 5px 0 0;
     line-height: 100%;
@@ -11,6 +11,13 @@ $text-color: black;
         display: inline;
         border: .5px solid $text-color;
         border-radius: 5px;   
+    }
+
+    a {
+        color: $text-color;
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     .btn {

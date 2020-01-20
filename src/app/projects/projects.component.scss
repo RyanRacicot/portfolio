@@ -1,32 +1,41 @@
 .main {
     height: 100%;
-    padding: 2em;
+    width: 100%;
+    padding: 0 3em 3em 3em;
     overflow-y: scroll;
+    position: relative;
+    text-align: center;
 
     .card {
-        max-width: 396px;
-        width: 80vw;
+        width: auto;
+        max-width: 906px;
         height: max-content;
-        margin: 2em 1em;
-
-        .title {
-            margin-top: 1em;
+        margin: 2em auto;
+        padding: 0 .5em;
+        
+        .left {
+            .project-img {
+                cursor: pointer;
+                
+                max-height: 300px;
+                border-radius: 5px;
+            }
         }
 
-        .dummy-img {
-            margin: 0 auto;
-            width: auto;
-            height: 30vw;
-            max-height: 252px;
-            max-width: 348px;
-            // max-height: 348px;
-            // max-width: 496px;
+        .right {
+            padding: 1em;
+            .title {
+                cursor: pointer;
+            }
 
-            background-color: darkgray;
-            border-radius: 5px;
-        }
-        img {
-            max-width: 496;
+            .links {
+                * {
+                    display: inline-block;
+                }
+                p {
+                    margin: 0 .5em;
+                }
+            }
         }
     }
 }
