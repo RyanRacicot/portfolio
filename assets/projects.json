@@ -6,6 +6,9 @@
             "imgs": [
                 "harmonizer.png"
             ],
+            "skills": [
+                "Max"
+            ],
             "description": "A virtual instrument designed for live performance which retunes an input vocal signal to various output signals determined from midi input."
         },
         {
@@ -14,8 +17,12 @@
             "imgs": [
                 "rachel-portfolio.png"
             ],
+            "skills": [
+                "Angular",
+                "Github Pages"
+            ],
             "description": "Editable portfolio website for career Opera singer. Responsive and elegant web design that works at all screen sizes.",
-            "url": "rachelkobernick.com"
+            "url": "https://rachelkobernick.github.io/Portfolio/"
         },
         {
             "title": "Hitch",
@@ -25,6 +32,11 @@
                 "hitch_3.jpg",
                 "hitch_2.jpg"
             ],
+            "skills": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ],
             "description": "A cross-platform mobile application designed for college students coordinating carpooling trips as an alternative to expensive existing forms of long-distance travel. Created using Google's Flutter."
         },
         {
@@ -32,6 +44,12 @@
             "github": "https://github.com/RyanRacicot/RepertoireVault",
             "imgs": [
                 "repertoire-vault.png"
+            ],
+            "skills": [
+                "Angular",
+                "Node.js",
+                "Express",
+                "Heroku"
             ],
             "description": "Online tool designed for career musicians to track and share their performance ready repertoire",
             "url": "https://immense-tor-11241.herokuapp.com/"
