@@ -1,33 +1,58 @@
-.main {
-    height: 100%;
-    width: 100%;
-    padding: 0 3em 3em 3em;
-    overflow-y: scroll;
-    position: relative;
-    text-align: center;
 
+$card-width: 540px;
+$display-flex-breakpoint: 540px;
+$min-card-width: 400px;
+
+.main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 2em 0 3em 0 !important;
+    text-align: center;
+    
+    @media (min-width: $display-flex-breakpoint) {
+        display: flex;
+        flex-flow: row wrap;
+        word-wrap: break-word;
+        overflow-y: scroll;
+        justify-content: space-around;
+    }
+    @media (max-width: $display-flex-breakpoint) {
+        display: relative;
+        overflow-x: hidden;
+    }
+    
+    .card-wrapper {
+        margin: auto;
+    }
+    
     .card {
+        margin: 1em .5em;
+        @media (max-width: $display-flex-breakpoint) {
+            margin: 1em auto;
+        }
+        height: min-content;
         width: auto;
-        max-width: 906px;
-        height: max-content;
-        margin: 2em auto;
-        padding: 0 .5em;
-        
+        max-width: $min-card-width;
+        word-break: break-word;
+
         .left {
+            min-width: 300px;
+            height: auto;
             .project-img {
                 cursor: pointer;
-                
                 max-height: 300px;
                 border-radius: 5px;
             }
         }
 
         .right {
-            padding: 1em;
+            min-width: 200px;
+            padding: 1em 1em 0 1em;
             .title {
                 cursor: pointer;
             }
-
+            
             .links {
                 * {
                     display: inline-block;
@@ -35,6 +60,10 @@
                 p {
                     margin: 0 .5em;
                 }
+            }
+
+            .skill-badge {
+                margin: .25em .5em;
             }
         }
     }

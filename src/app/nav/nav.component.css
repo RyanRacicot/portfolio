@@ -22,6 +22,11 @@
   padding: 0.5em;
   transition: all 0.35s;
 }
+@media (max-width: 400px) {
+  .main .btn {
+    padding: 0.25em;
+  }
+}
 .main .btn:focus {
   box-shadow: none;
   outline: 0 !important;

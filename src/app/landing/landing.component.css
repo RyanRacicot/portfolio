@@ -4,8 +4,15 @@
 .bg #main {
   height: max-content;
   width: 100%;
+  margin: 0 2em;
   max-width: 360px;
-  min-width: 300px;
+  min-width: min-content;
+}
+.bg #main #icons {
+  margin-top: 0.5em;
+}
+.bg #main #icons .icon-divider {
+  width: 1em;
 }
 .bg #main img#headshot {
   width: 100%;

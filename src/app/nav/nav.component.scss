@@ -24,6 +24,9 @@ $text-color: black;
         color: $text-color;
         display: inline-block;
         padding: .5em;
+        @media (max-width: 400px) {
+            padding: .25em;
+        }
         // background-color: white;
         transition: all .35s;
     }

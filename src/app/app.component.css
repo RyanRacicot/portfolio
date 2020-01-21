@@ -9,6 +9,7 @@
   position: relative;
 }
 nav {
+  z-index: 5;
   position: absolute;
   width: max-content;
   bottom: 0;

@@ -84,6 +84,10 @@ video {
   border: 0;
   font-family: "Inconsolata", monospace;
 }
+.card {
+  background-color: #f3f3f3;
+  color: #3d3b3e;
+}
 html,
 body {
   height: 100%;
@@ -96,4 +100,5 @@ body {
 .pick-up:hover {
   box-shadow: 5px 5px 5px grey;
   transform: scale(1.01);
+  z-index: 2;
 }

@@ -1,1 +1,42 @@
-<p>contact works!</p>
+<div class="bg row justify-content-center align-content-center">
+    <div id="main" class="row justify-content-center align-content-center">
+        <div class="card text-center pick-up">
+            <div class="card-body container">
+               
+                <h4>Email me:</h4>
+                <div id="my-info">
+                    <a href="mailto:ryanmracicot@gmail.com" target="_blank" rel="noopener noreferrer">
+                        ryanmracicot@gmail.com
+                    </a>
+                </div>
+
+                <p>or</p>
+
+                <div id="direct-message">
+                    <h4>Message me directly:</h4>
+                    <form id="messageMeForm" class="needs-validation" novalidate>
+                        <div class="col">
+                            <div class="row">
+                                <div id="direct-message-group" class="input-group">
+                                    <input required type="text" name="name" id="name" class="form-control" placeholder="Who are you?">
+                                </div>
+                                <textarea required class="form-control" name="message" id="message" rows="4" placeholder="What's up?"></textarea>
+
+                                <div id="message-type-group" class="input-group">
+                                    <select class="custom-select" id="message-type-select">
+                                      <option selected><i>Send message via...</i></option>
+                                      <option value="1">Carrier Pidgeon</option>
+                                      <option value="2">Snail Mail</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center align-items-center">
+                                <button type="submit" class="btn btn-outline-success">Send Message!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
