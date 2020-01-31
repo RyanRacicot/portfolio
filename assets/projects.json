@@ -12,6 +12,18 @@
             "description": "A virtual instrument designed for live performance which retunes an input vocal signal to various output signals determined from midi input."
         },
         {
+            "title": "Equalizer Chrome Extension",
+            "github": "https://github.com/RyanRacicot/equalizer-chrome-extension",
+            "imgs": [
+                ""
+            ],
+            "skills": [
+                "Javascript",
+                "Web Audio API"
+            ],
+            "description": "Google Chrome extension that applies equalizer to current tabs audio stream."
+        },
+        {
             "title": "Rachel Kobernick Portfolio",
             "github": "https://github.com/RachelKobernick/Portfolio",
             "imgs": [
