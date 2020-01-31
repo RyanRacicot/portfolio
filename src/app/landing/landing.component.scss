@@ -10,6 +10,8 @@
         margin: 0 2em;
         max-width: 360px;
         min-width: min-content;
+        color: white !important;
+        text-align: center;
 
         p {
             margin-bottom: .1em;
@@ -17,22 +19,6 @@
 
         #icons {
             margin-top: 1em;
-            i {
-                transition: color .2s;
-                color: $dark;
-                &.fa-linkedin:hover {
-                    color: $linked-in-blue;
-                }
-                &.fa-github:hover {
-                    color: black;
-                }
-                &.fa-instagram:hover {
-                    color: black;
-                }
-                &.fa-twitter:hover {
-                    color: $twitter-blue;
-                }
-            }
             .icon-divider {
                 width: 1em;
             }
@@ -42,16 +28,8 @@
         img#headshot {
             width: 100%; 
             border-radius: 50%;
-            padding: 1em;
-            // filter: grayscale(60%) brightness(110%);
-            // transition: -webkit-filter .2s linear;
-            // &:hover {
-            //     filter: grayscale(0%) brightness(100%) saturate(75%);
-            // }
-        }
-        .card {
-            width: inherit;
-            height: inherit;
+            border: 1px solid white;
+            padding: .5em;
         }
     }
 }

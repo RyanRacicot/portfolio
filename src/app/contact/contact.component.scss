@@ -14,19 +14,13 @@
         }
 
         #my-info {
-            * {
-                display: inline-block;
-            }
             a {
-                font-size: large;
-                background-color: $dark;
                 color: white;
                 border-radius: 5px;
                 border: solid white 1px;
                 padding: .25em .5em;
                 transition: all .2s;
                 &:hover {
-                    border-color: $dark;
                     color: $dark;
                     background-color: white;
                     text-decoration: none;
@@ -38,8 +32,23 @@
             margin: 1em auto;
             width: 75%;
 
+            select:after {
+                color: white;
+            }
+
+            * {
+                background-color: transparent;
+                border-color: white;
+                color: white;
+            }
+
             button.btn {
                 margin-top: 1em;
+                &:hover {
+                    color: $dark;
+                    background-color: white;
+                    text-decoration: none;
+                }
             }
 
             #direct-message-group {
@@ -55,31 +64,38 @@
             }
             #message-type-select {
                 border-radius: 0 0 5px 5px;
-            }            
+            }      
+            
+          
         }
-
-        #icons {
-            margin-top: .5em;
-            .icon-divider {
-                width: 1em;
-            }
-        }
-
         .card {
             width: inherit;
             height: inherit;
         }
     }
+     
     ::-webkit-input-placeholder {
+        color: white;
         font-style: italic;
-     }
-     :-moz-placeholder {
-        font-style: italic;  
-     }
-     ::-moz-placeholder {
-        font-style: italic;  
-     }
-     :-ms-input-placeholder {  
-        font-style: italic; 
-     }
+    }
+    
+    :-moz-placeholder { /* Firefox 18- */
+        color: white;  
+        font-style: italic;
+    }
+    
+    ::-moz-placeholder {  /* Firefox 19+ */
+        color: white;  
+        font-style: italic;
+    }
+    
+    :-ms-input-placeholder {
+        color: white;  
+        font-style: italic;
+    }
+    
+    ::placeholder {
+        color: white;  
+        font-style: italic;
+    }
 }

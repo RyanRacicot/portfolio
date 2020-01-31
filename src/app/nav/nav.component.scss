@@ -2,49 +2,37 @@ $bg-color: white;
 $text-color: black;
 
 .main {
-    box-shadow: 5px 5px 5px grey, -5px 5px 5px grey;
-    background-color: $bg-color;
     border-radius: 5px 5px 0 0;
-    line-height: 100%;
-    .divider {
-        margin: .3em 0;
-        display: inline;
-        border: .5px solid $text-color;
-        border-radius: 5px;   
-    }
 
+    // For Resume link
     a {
-        color: $text-color;
+        color: white;
         &:hover {
             text-decoration: none;
         }
     }
 
     .btn {
-        color: $text-color;
+        color: white;
         display: inline-block;
         padding: .5em;
-        @media (max-width: 400px) {
-            padding: .25em;
-        }
-        // background-color: white;
-        transition: all .35s;
-    }
+        margin: 1em;
 
-    .btn:focus {
-        box-shadow: none;
-        outline: 0 !important;
+        @media (max-width: 600px) {
+            padding: .25em;
+            margin: .25em;
+        }
+        
+        transition: all .25s;
+        
+        &:focus {
+            box-shadow: none;
+            outline: 0 !important;
+        }
+        &:hover {
+            border: 1px solid white;
+            transform: scale(1.15);
+        }
     }
     
-    .btn:hover {
-        // font-weight: bold;
-        transform: scale(1.15);
-    }
-    
-    .left-end {
-        border-radius: 5px 0 0 5px;
-    }
-    .right-end {
-        border-radius: 0 5px 5px 0;
-    }
 }

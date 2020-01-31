@@ -2,25 +2,26 @@
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+$gradient-colors: #424874, #b47eb3, #db5461, #a6b1e1, #ffd3df;
+$alt-gradient-colors: #b0a760, #7eb3b4, #54dbce, #6b7cc8, #d3dfff;
+
+$mono-gradient: #734241, #BF5B5A, #BF8180, #47758F, #278BC2;
+$alt-mono-gradient: #278BC2, #47758F, #8280bf, #BF5B5A, #734241;
+
 html, body, router-outlet, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0; 
     // position: relative;
     font-family: 'Inconsolata', monospace;
-    color: $primary-text-color;
-}
-
-* {
-    color: $primary-text-color;
-    a {
-        color: $link-color;
-    }
+    // color: $primary-text-color;
+    // color: $secondary;
 }
 
 .card {
     background-color: white;
-    color: $primary-text-color;
+    color: white;
+    border: 1px solid white !important;
 }
 
 html, body {
@@ -29,12 +30,52 @@ html, body {
     overflow: hidden;
 }
 
-.pick-up {
-    box-shadow: 5px 5px 5px darken($color: grey, $amount: 5%);
-    // transition: all .2s;
-    // &:hover {
-    //     box-shadow: 5px 5px 5px grey;
-    //     transform: scale(1.01);
-    //     z-index: 2;
-    // }
+.gradient {
+    background: linear-gradient(35deg, #D16bA5, #C777B9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-position: center;
+    background-size: 400% 400%;
+    animation-name: MOVE-BG;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    &.alt {
+        background: transparent !important;
+    }
+}
+
+@keyframes MOVE-BG {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+.hover-icons {
+    i {
+        transition: color .2s;
+        color: white;
+        // color: $dark;
+        &.fa-linkedin:hover {
+            color: $linked-in-blue;
+        }
+        &.fa-github:hover {
+            color: black;
+        }
+        &.fa-instagram:hover {
+            color: black;
+        }
+        &.fa-twitter:hover {
+            color: $twitter-blue;
+        }
+        &.fa-bitbucket:hover {
+            color: $bitbucket-blue;
+        }
+        &.fa-external-link-alt:hover {
+            color: black;
+        }
+    }
 }

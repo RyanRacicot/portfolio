@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 2em 0 3em 0 !important;
+  padding: 3em 0 3em 0 !important;
   text-align: center;
 }
 @media (min-width: 540px) {
@@ -35,6 +35,9 @@
     margin: 1em auto;
   }
 }
+.main .card i {
+  color: white !important;
+}
 .main .card .left {
   min-width: 300px;
   height: auto;
@@ -51,10 +54,8 @@
 .main .card .right .title {
   cursor: pointer;
 }
-.main .card .right .links * {
-  display: inline-block;
-}
-.main .card .right .links p {
+.main .card .right .links p,
+.main .card .right .links a {
   margin: 0 0.5em;
 }
 .main .card .right .skill-badge {

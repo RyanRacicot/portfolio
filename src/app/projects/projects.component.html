@@ -1,32 +1,37 @@
 <div class="main">
     <div *ngFor="let project of projects" class="card-wrapper">
-        <div class="card pick-up">
+        <div class="card pick-up gradient alt">
             <div class="card-body row">
                 <div *ngIf="!smallScreen" class="left col">
-                    <img src="assets/{{project.imgs[0]}}" class="img-fluid project-img" alt="{{project.imgs[0]}}" routerLink="['project-details', '{{project.title}}']" >
-                    <!-- <img src="assets/{{project.imgs[1]}}" class="img-fluid project-img" alt="{{project.imgs[1]}}" routerLink="['project-details', '{{project.title}}']" > -->
+                    <div class="img-wrapper">
+                        <img *ngIf="project.imgs[0]" src="assets/{{project.imgs[0]}}" class="img-fluid project-img" alt="{{project.imgs[0]}}" routerLink="['project-details', '{{project.title}}']" >
+                    </div>
                 </div>
                 <div class="right">
                     <div class="title">
                         <h2 routerLink="['project-details', '{{project.title}}']">{{project.title}}</h2>
                     </div>
-                    <div class="links">
+                    <div class="links hover-icons">
                         <a
                             *ngIf="project.github != undefined"
                             href="{{project.github}}"
                             target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github fa-lg" style="color: black;"></i>
+                            <i class="fab fa-github fa-lg"></i>
                         </a>
                         <a
                             *ngIf="project.bitbucket != undefined" 
                             href="{{project.bitbucket}}" 
                             target="_blank" 
                             rel="noopener noreferrer">
-                            <i class="fab fa-bitbucket fa-lg" style="color: #1a47a5;"></i>
+                            <i class="fab fa-bitbucket fa-lg"></i>
                         </a>
-                        <div *ngIf="project.url">
-                            <p class="url-hyphen" *ngIf="(project.github || project.bitbucket) && project.url">-</p> <a href="{{project.url}}" target="_blank" rel="noopener noreferrer">{{project.url}}</a>
-                        </div>
+                        <a *ngIf="project.url" href="{{project.url}}" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <!-- <div *ngIf="project.url">
+                            <p class="url-hyphen" *ngIf="(project.github || project.bitbucket) && project.url">-</p> 
+                            <a href="{{project.url}}" target="_blank" rel="noopener noreferrer">{{project.url}}</a>
+                        </div> -->
                     </div>
                     <div class="row justify-content-center">
                         <h5 *ngFor="let skill of project.skills" class="skill-badge"><span class="badge badge-dark">{{skill}}</span></h5>

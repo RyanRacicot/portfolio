@@ -1,30 +1,23 @@
 .main {
-  box-shadow: 5px 5px 5px grey, -5px 5px 5px grey;
-  background-color: #fff;
   border-radius: 5px 5px 0 0;
-  line-height: 100%;
-}
-.main .divider {
-  margin: 0.3em 0;
-  display: inline;
-  border: 0.5px solid #000;
-  border-radius: 5px;
 }
 .main a {
-  color: #000;
+  color: white;
 }
 .main a:hover {
   text-decoration: none;
 }
 .main .btn {
-  color: #000;
+  color: white;
   display: inline-block;
   padding: 0.5em;
-  transition: all 0.35s;
+  margin: 1em;
+  transition: all 0.25s;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .main .btn {
     padding: 0.25em;
+    margin: 0.25em;
   }
 }
 .main .btn:focus {
@@ -32,11 +25,6 @@
   outline: 0 !important;
 }
 .main .btn:hover {
+  border: 1px solid white;
   transform: scale(1.15);
-}
-.main .left-end {
-  border-radius: 5px 0 0 5px;
-}
-.main .right-end {
-  border-radius: 0 5px 5px 0;
 }

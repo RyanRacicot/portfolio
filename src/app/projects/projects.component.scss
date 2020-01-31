@@ -1,3 +1,4 @@
+@import '../../variables';
 
 $card-width: 540px;
 $display-flex-breakpoint: 540px;
@@ -7,7 +8,7 @@ $min-card-width: 400px;
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 2em 0 3em 0 !important;
+    padding: 3em 0 3em 0 !important;
     text-align: center;
     
     @media (min-width: $display-flex-breakpoint) {
@@ -35,7 +36,7 @@ $min-card-width: 400px;
         width: auto;
         max-width: $min-card-width;
         word-break: break-word;
-
+            
         .left {
             min-width: 300px;
             height: auto;
@@ -43,21 +44,21 @@ $min-card-width: 400px;
                 cursor: pointer;
                 max-height: 300px;
                 border-radius: 5px;
+                border: 1px solid white;
+                padding: .5em;
             }
         }
 
         .right {
             min-width: 200px;
             padding: 1em 1em 0 1em;
+
             .title {
                 cursor: pointer;
             }
             
             .links {
-                * {
-                    display: inline-block;
-                }
-                p {
+                p, a {
                     margin: 0 .5em;
                 }
             }
