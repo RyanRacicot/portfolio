@@ -74,8 +74,19 @@ html, body {
         &.fa-bitbucket:hover {
             color: $bitbucket-blue;
         }
-        &.fa-external-link-alt:hover {
+        &.fa-external-link-alt:hover,
+        &.fa-link:hover {
             color: black;
         }
     }
+}
+
+*::-webkit-scrollbar {
+    background: transparent;
+    width: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: white;
 }

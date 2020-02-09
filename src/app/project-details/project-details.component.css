@@ -1,7 +1,38 @@
 .main {
+  overflow: scroll;
   height: 100%;
-  padding: 2em;
+  width: 100%;
+  padding: 7em 1em 0em 1em;
+  text-align: center;
 }
 .main .card {
-  padding: 2em;
+  padding: 0.5em 1em;
+  min-width: min-content;
+  max-width: 750px;
+  margin: auto;
+}
+.main #links {
+  margin-top: 0.25em;
+}
+.main #links a {
+  margin: auto 0.25em;
+}
+.main #skills .badge {
+  padding: 0.5em 1em;
+  margin: 0.5em;
+}
+.main .imgs {
+  display: flex;
+  flex-flow: row wrap;
+}
+.main .imgs .img-wrapper {
+  padding: 0.5em;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: max-content;
+  margin: 0.5em auto;
+}
+.main .imgs .img-wrapper .project-img {
+  max-height: 400px;
+  border-radius: 5px;
 }

@@ -10,7 +10,7 @@ export const pageNavigationAnimation =
 
 ]);
 
-function DefaultPageTransition() {
+export function DefaultPageTransition() {
   return transition('* <=> *', [
 
     query(':enter, :leave', [
@@ -34,7 +34,7 @@ function DefaultPageTransition() {
   ]);
 }
 
-function ProjectsPageTransition() {
+export function ProjectsPageTransition() {
   return transition('* => ProjectsPage', [
 
     query(':enter, :leave', [

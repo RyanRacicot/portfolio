@@ -15,16 +15,17 @@
             "title": "Equalizer Chrome Extension",
             "github": "https://github.com/RyanRacicot/equalizer-chrome-extension",
             "imgs": [
-                ""
+                "eq.png",
+                "eq2.png",
+                "eq3.png"
             ],
             "skills": [
-                "Javascript",
-                "Web Audio API"
+                "Javascript"
             ],
-            "description": "Google Chrome extension that applies equalizer to current tabs audio stream."
+            "description": "Simple chrome extension with tab specific 8-band equalization."
         },
         {
-            "title": "Rachel Kobernick Portfolio",
+            "title": "Opera Singer Portfolio",
             "github": "https://github.com/RachelKobernick/Portfolio",
             "imgs": [
                 "rachel-portfolio.png"

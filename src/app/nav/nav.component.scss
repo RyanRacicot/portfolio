@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 $bg-color: white;
 $text-color: black;
 
@@ -12,11 +14,16 @@ $text-color: black;
         }
     }
 
+    
+
     .btn {
         color: white;
         display: inline-block;
-        padding: .5em;
+        padding: .5em 1em;
         margin: 1em;
+        border: 1px solid white;
+        font-weight: bold;
+        backdrop-filter: blur(15px);
 
         @media (max-width: 600px) {
             padding: .25em;
@@ -30,7 +37,6 @@ $text-color: black;
             outline: 0 !important;
         }
         &:hover {
-            border: 1px solid white;
             transform: scale(1.15);
         }
     }
