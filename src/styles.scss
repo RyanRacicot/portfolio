@@ -59,7 +59,8 @@ html, body {
         transition: color .2s;
         color: white;
         // color: $dark;
-        &.fa-linkedin:hover {
+        &.fa-linkedin:hover,
+        &.fa-linkedin-in:hover {
             color: $linked-in-blue;
         }
         &.fa-github:hover {
@@ -70,6 +71,9 @@ html, body {
         }
         &.fa-twitter:hover {
             color: $twitter-blue;
+        }
+        &.fa-facebook:hover {
+            color: $facebook-blue;
         }
         &.fa-bitbucket:hover {
             color: $bitbucket-blue;

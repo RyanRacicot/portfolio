@@ -1,101 +1,64 @@
-@import '../../styles.scss';
+// @import '../../styles.scss';
+// @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../variables';
 
 .bg {
     height: 100%;
     
     #main {
         height: max-content;
+        text-align: center;
         margin: 2em;
         width: 800px;
         min-width: 300px;
+        
+        a {
+            color: white;
+            padding: .5em .5em;
+            transition: all .2s;
 
-        #my-info, #direct-message {
-            margin: .5em auto;
+            &:hover {
+                color: $dark;
+                text-decoration: none;
+            }
         }
 
+        #tag {
+            h1, h2, h3, h4, h5, h6 {
+                display: inline;
+            }
+        }
+
+        .divider {
+            width: 75%;
+            height: 1px;
+            margin: 1em auto;
+            background-color: white;
+        }
+        #links {
+            margin-top: 1em;
+        }
         #my-info {
+            margin: 1em auto;
+            width: max-content;
+            transition: all .25s ease;
             a {
-                color: white;
                 border-radius: 5px;
                 border: solid white 1px;
-                padding: .25em .5em;
+                padding: .5em .5em;
                 transition: all .2s;
-                &:hover {
-                    color: $dark;
-                    background-color: white;
-                    text-decoration: none;
-                }
+                color: $dark;
+                background-color: white;
+                text-decoration: none;
+            }
+            &:hover {
+                transform: scale(1.1);
             }
         }
 
-        #messageMeForm {
-            margin: 1em auto;
-            width: 75%;
-
-            select:after {
-                color: white;
-            }
-
-            * {
-                background-color: transparent;
-                border-color: white;
-                color: white;
-            }
-
-            button.btn {
-                margin-top: 1em;
-                &:hover {
-                    color: $dark;
-                    background-color: white;
-                    text-decoration: none;
-                }
-            }
-
-            #direct-message-group {
-                #name {
-                    border-radius: 5px 5px 0 0;
-                }
-                option {
-                    font-style: italic;
-                }
-            }
-            #message {
-                border-radius: 0px;
-            }
-            #message-type-select {
-                border-radius: 0 0 5px 5px;
-            }      
-            
-          
-        }
         .card {
             width: inherit;
             height: inherit;
         }
-    }
-     
-    ::-webkit-input-placeholder {
-        color: white;
-        font-style: italic;
-    }
-    
-    :-moz-placeholder { /* Firefox 18- */
-        color: white;  
-        font-style: italic;
-    }
-    
-    ::-moz-placeholder {  /* Firefox 19+ */
-        color: white;  
-        font-style: italic;
-    }
-    
-    :-ms-input-placeholder {
-        color: white;  
-        font-style: italic;
-    }
-    
-    ::placeholder {
-        color: white;  
-        font-style: italic;
     }
 }

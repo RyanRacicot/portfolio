@@ -11,18 +11,35 @@
 .bg #main #direct-message {
   margin: 0.5em auto;
 }
-.bg #main #my-info * {
-  display: inline-block;
-}
 .bg #main #my-info a {
-  font-size: large;
+  color: white;
+  border-radius: 5px;
+  border: solid white 1px;
+  padding: 0.25em 0.5em;
+  transition: all 0.2s;
+}
+.bg #main #my-info a:hover {
+  background-color: white;
+  text-decoration: none;
 }
 .bg #main #messageMeForm {
   margin: 1em auto;
   width: 75%;
 }
+.bg #main #messageMeForm select:after {
+  color: white;
+}
+.bg #main #messageMeForm * {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
 .bg #main #messageMeForm button.btn {
   margin-top: 1em;
+}
+.bg #main #messageMeForm button.btn:hover {
+  background-color: white;
+  text-decoration: none;
 }
 .bg #main #messageMeForm #direct-message-group #name {
   border-radius: 5px 5px 0 0;
@@ -36,25 +53,7 @@
 .bg #main #messageMeForm #message-type-select {
   border-radius: 0 0 5px 5px;
 }
-.bg #main #icons {
-  margin-top: 0.5em;
-}
-.bg #main #icons .icon-divider {
-  width: 1em;
-}
 .bg #main .card {
   width: inherit;
   height: inherit;
-}
-.bg ::-webkit-input-placeholder {
-  font-style: italic;
-}
-.bg :-moz-placeholder {
-  font-style: italic;
-}
-.bg ::-moz-placeholder {
-  font-style: italic;
-}
-.bg :-ms-input-placeholder {
-  font-style: italic;
 }
