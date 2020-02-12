@@ -36,12 +36,22 @@
         #email {
             display: inline-block;
             border-radius: 5px;
-            border: solid white 1px;
+            border: 1px solid white;
             padding: .5em;
+            background-color: transparent;
+            color: white;
             margin: auto .5em;
-            a { color: $dark; }
-            background-color: white;
             text-decoration: none;
+            transition: all .15s ease;
+
+            &:hover {
+                color: $dark;
+                background-color: white;
+                transform: scale(1.1);
+                a {
+                    color: $dark;
+                }
+            }
         }
 
         .divider {
