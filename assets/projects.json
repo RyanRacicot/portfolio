@@ -22,7 +22,8 @@
             "skills": [
                 "Javascript"
             ],
-            "description": "Simple chrome extension with tab specific 8-band equalization."
+            "description": "Simple chrome extension with tab specific 8-band equalization.",
+            "long_description": "Audio manipulation acheived using the Web Audio API. Effective use of asynchronous functionality for fluid UI while manipulating audio streams. Well designed object oriented design allows for multiple tabs to be EQ'd at once."
         },
         {
             "title": "Opera Singer Portfolio",
@@ -55,7 +56,8 @@
                 "Dart",
                 "Firebase"
             ],
-            "description": "A cross-platform mobile application designed for college students coordinating carpooling trips as an alternative to expensive existing forms of long-distance travel. Created using Google's Flutter."
+            "description": "A cross-platform mobile application designed for college students coordinating carpooling trips as an alternative to expensive existing forms of long-distance travel.",
+            "long_description": "I was given the UI mockups shown below, and implemented the designs using Google's Flutter, and implemented the service back-end using Firebase."
         },
         {
             "title": "Repertoire Vault",
@@ -69,7 +71,8 @@
                 "Express",
                 "Heroku"
             ],
-            "description": "Online tool designed for career musicians to track and share their performance ready repertoire",
+            "description": "Online tool designed for career musicians to track and share their performance ready repertoire. Future plans include the ability to share one's repertoire with others.",
+            "long_description": "REST application created to teach myself how to create and host a web app using a modern framework. Includes a custom implemented encyrpted login service and search functionality.",
             "url": "https://immense-tor-11241.herokuapp.com/"
         }
     ]
