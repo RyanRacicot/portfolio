@@ -2,11 +2,33 @@
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-$gradient-colors: #424874, #b47eb3, #db5461, #a6b1e1, #ffd3df;
-$alt-gradient-colors: #b0a760, #7eb3b4, #54dbce, #6b7cc8, #d3dfff;
+$background-gradient:  #D16bA5,
+#C777B9, 
+#ba83ca, 
+#aa8fd8, 
+#9a9ae1, 
+#8aa7ec, 
+#79b3f4, 
+#69bff8, 
+#52cffe, 
+#41dfff, 
+#46eefa, 
+#5ffbf1;
 
-$mono-gradient: #734241, #BF5B5A, #BF8180, #47758F, #278BC2;
-$alt-mono-gradient: #278BC2, #47758F, #8280bf, #BF5B5A, #734241;
+$alt-background-gradient:  
+#d9306f,
+#ce3876,
+#c23f7d,
+#b74784,
+#ab4e8a,
+#a05691,
+#945e98,
+#89659f,
+#7e6da6,
+#7274ad,
+#677cb3,
+#5b83ba,
+#508bc1;
 
 html, body, router-outlet, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -31,9 +53,13 @@ html, body {
 }
 
 .gradient {
-    background: linear-gradient(35deg, #D16bA5, #C777B9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background: linear-gradient(35deg,
+     $background-gradient);
+
+    
     background-position: center;
     background-size: 400% 400%;
+    // background-size: 400% 400%;
     animation-name: MOVE-BG;
     animation-duration: 15s;
     animation-timing-function: ease-in-out;

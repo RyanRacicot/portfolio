@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from "@angular/router";
 import projects from "../../assets/projects.json";
-
+import { Project } from "../../assets/Project";
 
 @Component({
   selector: 'project-details',
@@ -13,6 +13,7 @@ export class ProjectDetailsComponent implements OnInit {
   routeId: any;
   projects: any;
   project: any;
+  test: Project;
 
   constructor(
     private route: ActivatedRoute,
@@ -32,7 +33,6 @@ export class ProjectDetailsComponent implements OnInit {
         break;
       }
     }
-
   }
 
 }

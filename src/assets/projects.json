@@ -28,13 +28,18 @@
             "title": "Opera Singer Portfolio",
             "github": "https://github.com/RachelKobernick/Portfolio",
             "imgs": [
-                "rachel-portfolio.png"
+                "rachel-portfolio.png",
+                "rachel-portfolio-responsive-1.png",
+                "rachel-portfolio-responsive-2.png",
+                "rachel-portfolio-responsive-3.png"
             ],
             "skills": [
                 "Angular",
-                "Github Pages"
+                "Github Pages",
+                "Continuous Deployment"
             ],
-            "description": "Editable portfolio website for career Opera singer. Responsive and elegant web design that works at all screen sizes.",
+            "description": "A portfolio website made for a career Opera singer as a platfrom for promotional material.",
+            "long_description": "Responsive and elegant web design that works at all screen sizes.  Designed with ease of editability as foremost importance. Continuous Deployment through Github Actions allows for her to edit all content of the website without having any knowledge of the Angular deployment process.",
             "url": "https://rachelkobernick.github.io/Portfolio/"
         },
         {
