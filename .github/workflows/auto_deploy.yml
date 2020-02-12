@@ -1,0 +1,37 @@
+name: Auto-Deploy
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Checkout master
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.12.0
+      - name: ng deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE_BRANCH: master
+          BRANCH: gh-pages
+        run: |
+          npm install
+          npm run ng -- deploy --no-silent
+          
+      - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+
+      - name: Publish Changes
+        uses: peaceiris/actions-gh-pages@v2
+        env: 
+          PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          PUBLISH_DIR: .
+          PUBLISH_BRANCH: gh-pages
