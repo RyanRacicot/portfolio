@@ -22,6 +22,7 @@
             "skills": [
                 "Javascript"
             ],
+            "url": "https://chrome.google.com/webstore/detail/elffpeojjidpaecfanjkacjpkohlgjfk/publish-accepted?authuser=1&hl=en",
             "description": "Simple chrome extension with tab specific 8-band equalization.",
             "long_description": "Audio manipulation acheived using the Web Audio API. Effective use of asynchronous functionality for fluid UI while manipulating audio streams. Well designed object oriented design allows for multiple tabs to be EQ'd at once."
         },
