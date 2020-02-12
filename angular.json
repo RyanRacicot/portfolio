@@ -130,6 +130,8 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
+            "name": "RyanRacicot",
+            "email": "ryanmracicot@gmail.com",
             "cname": "ryanracicot.com"
           }
         }
