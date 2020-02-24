@@ -2,45 +2,61 @@
 	<div class="card pick-up gradient alt">
 		<div class="card-body col container">
 			<h1>{{ project.title }}</h1>
-			<div class="row justify-content-center align-content-center">
-				<div id="links" class="hover-icons">
-					<a
-						*ngIf="project.github != undefined"
-						href="{{ project.github }}"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
+
+			<div id="skills">
+				<div id="badges">
+					<!-- <div id="badges" class="row justify-content-center align-content-center"> -->
+					<div class="skill-badge" *ngFor="let skill of project.skills">
+						<!-- <span class="skill-badge"> -->
+						<i *ngIf="skill.fa_icon" class="{{ skill.fa_icon }}"></i>
+						{{ skill.name }}
+						<!-- </span> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="divider"></div>
+
+			<div class="description">
+				<p>{{ project.description }}</p>
+				<div *ngIf="project.long_description">
+					<br />
+					<div class="long-description">
+						{{ project.long_description }}
+					</div>
+				</div>
+			</div>
+
+			<div id="links" class="hover-icons row justify-content-center align-content-center">
+				<div class="link" *ngIf="project.github != undefined">
+					<a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">
 						<i class="fab fa-github fa-2x"></i>
 					</a>
-					<a
-						*ngIf="project.bitbucket != undefined"
-						href="{{ project.bitbucket }}"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
+				</div>
+				<div class="link" *ngIf="project.bitbucket != undefined">
+					<a href="{{ project.bitbucket }}" target="_blank" rel="noopener noreferrer">
 						<i class="fab fa-bitbucket fa-2x"></i>
 					</a>
-					<a *ngIf="project.url" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
-						<i class="fas fa-link fa-2x"></i>
+				</div>
+				<div class="link hover" *ngIf="project.url && !project.url_display_name">
+					<a class="url" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
+						<i class="fas fa-external-link-square-alt"></i>
+						{{ project.url }}
+					</a>
+				</div>
+				<div class="link hover" *ngIf="project.url && project.url_display_name">
+					<a class="url" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
+						<i class="fas fa-external-link-square-alt"></i>
+						{{ project.url_display_name }}
 					</a>
 				</div>
 			</div>
-			<div id="skills" class="row justify-content-center">
-				<h5 *ngFor="let skill of project.skills" class="skill-badge">
-					<span class="badge badge-dark">{{ skill }}</span>
-				</h5>
-			</div>
-			<div class="description">
-				<p>{{ project.description }}</p>
-			</div>
-			<br />
-			<div *ngIf="project.long_description" class="long-description">
-				{{ project.long_description }}
-			</div>
-		</div>
-		<div class="imgs">
-			<div *ngFor="let pic of project.imgs" class="img-wrapper">
-				<img *ngIf="pic" src="assets/{{ pic }}" class="img-fluid project-img" alt="{{ pic }}" />
+
+			<div class="divider"></div>
+			<div class="imgs">
+				<div *ngFor="let pic of project.imgs" class="img-wrapper">
+					<img *ngIf="pic" src="assets/{{ pic }}" class="img-fluid project-img" alt="{{ pic }}" />
+				</div>
 			</div>
 		</div>
 	</div>

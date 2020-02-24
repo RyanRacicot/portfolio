@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .main {
 	overflow: scroll;
 	height: 100%;
@@ -6,25 +8,71 @@
 	text-align: center;
 
 	.card {
-		padding: 0.5em 1em;
-		min-width: min-content;
+		padding: 0.5em;
 		max-width: 750px;
 		margin: auto;
 	}
 
+	.divider {
+		height: 1px;
+		width: 95%;
+		background: white;
+		margin: 1.5em auto;
+	}
+
 	#links {
-		margin-top: 0.25em;
-		a {
-			margin: auto 0.25em;
+		margin-top: 1.5em;
+		.link {
+			transition: transform 0.2s ease-in-out;
+			display: flex;
+			align-items: center;
+			margin: 0.25em 1em;
+
+			&.hover:hover {
+				transform: scale(1.05);
+			}
+
+			a {
+				font-size: 1.2em;
+				margin: auto;
+				color: white;
+				&.url {
+					color: white;
+					text-decoration: none;
+					padding: 0.25em 0.5em;
+					background-color: transparent;
+					border-radius: 5px;
+					border: 1px solid white;
+				}
+			}
+		}
+	}
+
+	.description {
+		width: 95%;
+		@media (max-width: 700px) {
+			width: 100%;
 		}
 	}
 
 	#skills {
-		.badge {
-			padding: 0.5em 1em;
-			margin: 0.5em;
+		margin-top: 1em;
+		#badges {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.skill-badge {
+			font-size: 1em;
+			margin: 0.25em 0.5em;
+			padding: 0.25em 0.5em;
+			border: 1px solid white;
+			border-radius: 5px;
+			width: max-content;
 		}
 	}
+
 	.imgs {
 		display: flex;
 		flex-flow: row wrap;

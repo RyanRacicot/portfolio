@@ -113,10 +113,8 @@ body {
 
 .gradient {
 	background: linear-gradient(35deg, $background-gradient);
-
 	background-position: center;
 	background-size: 400% 400%;
-	// background-size: 400% 400%;
 	animation-name: MOVE-BG;
 	animation-duration: 15s;
 	animation-timing-function: ease-in-out;
@@ -141,7 +139,6 @@ body {
 	i {
 		transition: color 0.2s;
 		color: white;
-		// color: $dark;
 		&.fa-linkedin:hover,
 		&.fa-linkedin-in:hover {
 			color: $linked-in-blue;
