@@ -2,34 +2,33 @@
 @import '../../variables';
 
 .bg {
-    height: 100%;
-    
-    #main {
-        height: max-content;
-        width: 100%;
-        margin: 0 2em;
-        max-width: 360px;
-        min-width: min-content;
-        color: white !important;
-        text-align: center;
+	height: 100%;
 
-        p {
-            margin-bottom: .1em;
-        }
+	#main {
+		height: max-content;
+		width: 100%;
+		margin: 0 2em;
+		max-width: 360px;
+		min-width: min-content;
+		color: white !important;
+		text-align: center;
 
-        #icons {
-            margin-top: 1em;
-            .icon-divider {
-                width: 1em;
-            }
-            
-        }
+		p {
+			margin-bottom: 0.1em;
+		}
 
-        img#headshot {
-            width: 100%; 
-            border-radius: 50%;
-            border: 1px solid white;
-            padding: .5em;
-        }
-    }
+		#icons {
+			margin-top: 1em;
+			.icon-divider {
+				width: 1em;
+			}
+		}
+
+		img#headshot {
+			width: 100%;
+			border-radius: 50%;
+			border: 1px solid white;
+			padding: 0.5em;
+		}
+	}
 }

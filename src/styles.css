@@ -79,26 +79,26 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: "Inconsolata", monospace;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Inconsolata', monospace;
 }
 .card {
-  background-color: #f3f3f3;
-  color: #3d3b3e;
+	background-color: #f3f3f3;
+	color: #3d3b3e;
 }
 html,
 body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 .pick-up {
-  transition: all 0.2s;
+	transition: all 0.2s;
 }
 .pick-up:hover {
-  box-shadow: 5px 5px 5px grey;
-  transform: scale(1.01);
-  z-index: 2;
+	box-shadow: 5px 5px 5px grey;
+	transform: scale(1.01);
+	z-index: 2;
 }

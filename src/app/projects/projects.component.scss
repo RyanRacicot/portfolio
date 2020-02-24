@@ -5,79 +5,79 @@ $display-flex-breakpoint: 540px;
 $min-card-width: 400px;
 
 .main {
-    width: 100%;
-    height: 100%;
-    padding: 4em 0 3em 0 !important;
-    text-align: center;
-    
-    @media (min-width: $display-flex-breakpoint) {
-        display: flex;
-        flex-flow: row wrap;
-        word-wrap: break-word;
-        overflow-y: scroll;
-        justify-content: space-around;
-    }
-    @media (max-width: $display-flex-breakpoint) {
-        display: relative;
-        overflow-x: hidden;
-    }
-    
-    .card-wrapper {
-        margin: auto;
-    }
-    
-    .card {
-        margin: 1em .5em;
-        padding: 1em;
-        @media (max-width: $display-flex-breakpoint) {
-            margin: 1em auto;
-        }
-        max-width: $min-card-width;
-        word-break: break-word;
-            
-        .left {
-            min-width: 300px;
-            width: 100%;
-            height: 100%;
+	width: 100%;
+	height: 100%;
+	padding: 4em 0 3em 0 !important;
+	text-align: center;
 
-            .img-wrapper {
-                position: relative;
-                text-align: center;
-                border-radius: 5px;
-                margin: 0 auto;
-                width: 100%;
-                max-width: 100%;
-                transition: all .25s ease;
+	@media (min-width: $display-flex-breakpoint) {
+		display: flex;
+		flex-flow: row wrap;
+		word-wrap: break-word;
+		overflow-y: scroll;
+		justify-content: space-around;
+	}
+	@media (max-width: $display-flex-breakpoint) {
+		display: relative;
+		overflow-x: hidden;
+	}
 
-                .overlay-title {
-                    z-index: 2;
-                    position: absolute;
-                    width: 90%;
-                    padding: .5em;
-                    max-height: 100%;
-                    top: 50%;
-                    left: 50%;
-                    transform: translateX(-50%) translateY(-50%);
-                    pointer-events: none;
-                    border: 2px solid white;
-                    border-radius: 5px;
-                    backdrop-filter: blur(10px) brightness(.35);
-                }
+	.card-wrapper {
+		margin: auto;
+	}
 
-                &:hover {
-                    transform: scale(1.05);
-                    .project-img {
-                        filter: none;
-                    }
-                }
-                .project-img {
-                    filter: blur(2px);
-                    // filter: grayscale(100%);
-                    cursor: pointer;
-                    max-height: 300px;
-                    border-radius: 5px;
-                }
-            }
-        }
-    }
+	.card {
+		margin: 1em 0.5em;
+		padding: 1em;
+		@media (max-width: $display-flex-breakpoint) {
+			margin: 1em auto;
+		}
+		max-width: $min-card-width;
+		word-break: break-word;
+
+		.left {
+			min-width: 300px;
+			width: 100%;
+			height: 100%;
+
+			.img-wrapper {
+				position: relative;
+				text-align: center;
+				border-radius: 5px;
+				margin: 0 auto;
+				width: 100%;
+				max-width: 100%;
+				transition: all 0.25s ease;
+
+				.overlay-title {
+					z-index: 2;
+					position: absolute;
+					width: 90%;
+					padding: 0.5em;
+					max-height: 100%;
+					top: 50%;
+					left: 50%;
+					transform: translateX(-50%) translateY(-50%);
+					pointer-events: none;
+					border: 2px solid white;
+					border-radius: 5px;
+					backdrop-filter: blur(10px) brightness(0.35);
+				}
+
+				&:hover {
+					transform: scale(1.05);
+					.project-img {
+						filter: none;
+					}
+				}
+				.project-img {
+					filter: blur(2px);
+					// filter: grayscale(100%);
+					cursor: pointer;
+					max-height: 300px;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
 }

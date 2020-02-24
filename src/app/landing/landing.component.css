@@ -1,25 +1,25 @@
 .bg {
-  height: 100%;
+	height: 100%;
 }
 .bg #main {
-  height: max-content;
-  width: 100%;
-  margin: 0 2em;
-  max-width: 360px;
-  min-width: min-content;
+	height: max-content;
+	width: 100%;
+	margin: 0 2em;
+	max-width: 360px;
+	min-width: min-content;
 }
 .bg #main #icons {
-  margin-top: 0.5em;
+	margin-top: 0.5em;
 }
 .bg #main #icons .icon-divider {
-  width: 1em;
+	width: 1em;
 }
 .bg #main img#headshot {
-  width: 100%;
-  border-radius: 50%;
-  padding: 1em;
+	width: 100%;
+	border-radius: 50%;
+	padding: 1em;
 }
 .bg #main .card {
-  width: inherit;
-  height: inherit;
+	width: inherit;
+	height: inherit;
 }

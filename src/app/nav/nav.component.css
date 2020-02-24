@@ -1,31 +1,31 @@
 .main {
-  border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 }
 .main a {
-  color: white;
+	color: white;
 }
 .main a:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 .main .btn {
-  background-color: white;
-  color: transparent;
-  display: inline-block;
-  padding: 0.5em;
-  margin: 1em;
-  transition: all 0.25s;
+	background-color: white;
+	color: transparent;
+	display: inline-block;
+	padding: 0.5em;
+	margin: 1em;
+	transition: all 0.25s;
 }
 @media (max-width: 600px) {
-  .main .btn {
-    padding: 0.25em;
-    margin: 0.25em;
-  }
+	.main .btn {
+		padding: 0.25em;
+		margin: 0.25em;
+	}
 }
 .main .btn:focus {
-  box-shadow: none;
-  outline: 0 !important;
+	box-shadow: none;
+	outline: 0 !important;
 }
 .main .btn:hover {
-  border: 1px solid white;
-  transform: scale(1.15);
+	border: 1px solid white;
+	transform: scale(1.15);
 }

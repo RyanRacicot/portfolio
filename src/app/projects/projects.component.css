@@ -1,63 +1,63 @@
 .main {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 3em 0 3em 0 !important;
-  text-align: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 3em 0 3em 0 !important;
+	text-align: center;
 }
 @media (min-width: 540px) {
-  .main {
-    display: flex;
-    flex-flow: row wrap;
-    word-wrap: break-word;
-    overflow-y: scroll;
-    justify-content: space-around;
-  }
+	.main {
+		display: flex;
+		flex-flow: row wrap;
+		word-wrap: break-word;
+		overflow-y: scroll;
+		justify-content: space-around;
+	}
 }
 @media (max-width: 540px) {
-  .main {
-    display: relative;
-    overflow-x: hidden;
-  }
+	.main {
+		display: relative;
+		overflow-x: hidden;
+	}
 }
 .main .card-wrapper {
-  margin: auto;
+	margin: auto;
 }
 .main .card {
-  margin: 1em 0.5em;
-  height: min-content;
-  width: auto;
-  max-width: 400px;
-  word-break: break-word;
+	margin: 1em 0.5em;
+	height: min-content;
+	width: auto;
+	max-width: 400px;
+	word-break: break-word;
 }
 @media (max-width: 540px) {
-  .main .card {
-    margin: 1em auto;
-  }
+	.main .card {
+		margin: 1em auto;
+	}
 }
 .main .card i {
-  color: white !important;
+	color: white !important;
 }
 .main .card .left {
-  min-width: 300px;
-  height: auto;
+	min-width: 300px;
+	height: auto;
 }
 .main .card .left .project-img {
-  cursor: pointer;
-  max-height: 300px;
-  border-radius: 5px;
+	cursor: pointer;
+	max-height: 300px;
+	border-radius: 5px;
 }
 .main .card .right {
-  min-width: 200px;
-  padding: 1em 1em 0 1em;
+	min-width: 200px;
+	padding: 1em 1em 0 1em;
 }
 .main .card .right .title {
-  cursor: pointer;
+	cursor: pointer;
 }
 .main .card .right .links p,
 .main .card .right .links a {
-  margin: 0 0.5em;
+	margin: 0 0.5em;
 }
 .main .card .right .skill-badge {
-  margin: 0.25em 0.5em;
+	margin: 0.25em 0.5em;
 }

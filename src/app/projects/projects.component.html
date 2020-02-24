@@ -1,12 +1,20 @@
 <div class="main">
-    <div *ngFor="let project of projects" class="card-wrapper">
-        <div class="card pick-up gradient alt">
-            <div class="left">
-                <div class="img-wrapper">
-                    <h2 class="overlay-title"><b>{{project.title}}</b></h2>
-                    <img *ngIf="project.imgs[0]" src="assets/{{project.imgs[0]}}" class="img-fluid project-img" alt="{{project.imgs[0]}}" routerLink="['project-details', '{{project.title}}']" >
-                </div>
-            </div>
-        </div>
-    </div>    
+	<div *ngFor="let project of projects" class="card-wrapper">
+		<div class="card pick-up gradient alt">
+			<div class="left">
+				<div class="img-wrapper">
+					<h2 class="overlay-title">
+						<b>{{ project.title }}</b>
+					</h2>
+					<img
+						*ngIf="project.imgs[0]"
+						src="assets/{{ project.imgs[0] }}"
+						class="img-fluid project-img"
+						alt="{{ project.imgs[0] }}"
+						routerLink="['project-details', '{{ project.title }}']"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

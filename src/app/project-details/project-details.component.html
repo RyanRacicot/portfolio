@@ -1,42 +1,47 @@
 <div class="main">
-    <div class="card pick-up gradient alt">
-        <div class="card-body col container">
-            <h1>{{project.title}}</h1>
-            <div class="row justify-content-center align-content-center">
-                <div id="links" class="hover-icons">
-                    <a
-                        *ngIf="project.github != undefined"
-                        href="{{project.github}}"
-                        target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github fa-2x"></i>
-                    </a>
-                    <a
-                        *ngIf="project.bitbucket != undefined" 
-                        href="{{project.bitbucket}}" 
-                        target="_blank" 
-                        rel="noopener noreferrer">
-                        <i class="fab fa-bitbucket fa-2x"></i>
-                    </a>
-                    <a *ngIf="project.url" href="{{project.url}}" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-link fa-2x"></i>
-                    </a>
-                </div>
-            </div>
-            <div id="skills" class="row justify-content-center">
-                <h5 *ngFor="let skill of project.skills" class="skill-badge"><span class="badge badge-dark">{{skill}}</span></h5>
-            </div>
-            <div class="description">
-                <p>{{project.description}}</p>  
-            </div>
-            <br>
-            <div *ngIf="project.long_description" class="long-description">
-                {{project.long_description}}
-            </div>
-        </div>
-        <div class="imgs">
-            <div *ngFor="let pic of project.imgs" class="img-wrapper">
-                <img *ngIf="pic" src="assets/{{pic}}" class="img-fluid project-img" alt="{{pic}}">
-            </div>
-        </div>
-    </div>
+	<div class="card pick-up gradient alt">
+		<div class="card-body col container">
+			<h1>{{ project.title }}</h1>
+			<div class="row justify-content-center align-content-center">
+				<div id="links" class="hover-icons">
+					<a
+						*ngIf="project.github != undefined"
+						href="{{ project.github }}"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i class="fab fa-github fa-2x"></i>
+					</a>
+					<a
+						*ngIf="project.bitbucket != undefined"
+						href="{{ project.bitbucket }}"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i class="fab fa-bitbucket fa-2x"></i>
+					</a>
+					<a *ngIf="project.url" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
+						<i class="fas fa-link fa-2x"></i>
+					</a>
+				</div>
+			</div>
+			<div id="skills" class="row justify-content-center">
+				<h5 *ngFor="let skill of project.skills" class="skill-badge">
+					<span class="badge badge-dark">{{ skill }}</span>
+				</h5>
+			</div>
+			<div class="description">
+				<p>{{ project.description }}</p>
+			</div>
+			<br />
+			<div *ngIf="project.long_description" class="long-description">
+				{{ project.long_description }}
+			</div>
+		</div>
+		<div class="imgs">
+			<div *ngFor="let pic of project.imgs" class="img-wrapper">
+				<img *ngIf="pic" src="assets/{{ pic }}" class="img-fluid project-img" alt="{{ pic }}" />
+			</div>
+		</div>
+	</div>
 </div>

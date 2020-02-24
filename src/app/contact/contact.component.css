@@ -1,59 +1,59 @@
 .bg {
-  height: 100%;
+	height: 100%;
 }
 .bg #main {
-  height: max-content;
-  margin: 2em;
-  width: 800px;
-  min-width: 300px;
+	height: max-content;
+	margin: 2em;
+	width: 800px;
+	min-width: 300px;
 }
 .bg #main #my-info,
 .bg #main #direct-message {
-  margin: 0.5em auto;
+	margin: 0.5em auto;
 }
 .bg #main #my-info a {
-  color: white;
-  border-radius: 5px;
-  border: solid white 1px;
-  padding: 0.25em 0.5em;
-  transition: all 0.2s;
+	color: white;
+	border-radius: 5px;
+	border: solid white 1px;
+	padding: 0.25em 0.5em;
+	transition: all 0.2s;
 }
 .bg #main #my-info a:hover {
-  background-color: white;
-  text-decoration: none;
+	background-color: white;
+	text-decoration: none;
 }
 .bg #main #messageMeForm {
-  margin: 1em auto;
-  width: 75%;
+	margin: 1em auto;
+	width: 75%;
 }
 .bg #main #messageMeForm select:after {
-  color: white;
+	color: white;
 }
 .bg #main #messageMeForm * {
-  background-color: transparent;
-  border-color: white;
-  color: white;
+	background-color: transparent;
+	border-color: white;
+	color: white;
 }
 .bg #main #messageMeForm button.btn {
-  margin-top: 1em;
+	margin-top: 1em;
 }
 .bg #main #messageMeForm button.btn:hover {
-  background-color: white;
-  text-decoration: none;
+	background-color: white;
+	text-decoration: none;
 }
 .bg #main #messageMeForm #direct-message-group #name {
-  border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 }
 .bg #main #messageMeForm #direct-message-group option {
-  font-style: italic;
+	font-style: italic;
 }
 .bg #main #messageMeForm #message {
-  border-radius: 0px;
+	border-radius: 0px;
 }
 .bg #main #messageMeForm #message-type-select {
-  border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
 }
 .bg #main .card {
-  width: inherit;
-  height: inherit;
+	width: inherit;
+	height: inherit;
 }

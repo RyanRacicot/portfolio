@@ -2,121 +2,178 @@
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-$background-gradient:  #D16bA5,
-#C777B9, 
-#ba83ca, 
-#aa8fd8, 
-#9a9ae1, 
-#8aa7ec, 
-#79b3f4, 
-#69bff8, 
-#52cffe, 
-#41dfff, 
-#46eefa, 
-#5ffbf1;
+$background-gradient: #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa,
+	#5ffbf1;
 
-$alt-background-gradient:  
-#d9306f,
-#ce3876,
-#c23f7d,
-#b74784,
-#ab4e8a,
-#a05691,
-#945e98,
-#89659f,
-#7e6da6,
-#7274ad,
-#677cb3,
-#5b83ba,
-#508bc1;
+$alt-background-gradient: #d9306f, #ce3876, #c23f7d, #b74784, #ab4e8a, #a05691, #945e98, #89659f, #7e6da6, #7274ad,
+	#677cb3, #5b83ba, #508bc1;
 
-html, body, router-outlet, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0; 
-    // position: relative;
-    font-family: 'Inconsolata', monospace;
-    // color: $primary-text-color;
-    // color: $secondary;
+html,
+body,
+router-outlet,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	// position: relative;
+	font-family: 'Inconsolata', monospace;
+	// color: $primary-text-color;
+	// color: $secondary;
 }
 
 .card {
-    background-color: white;
-    color: white;
-    border: 1px solid white !important;
+	background-color: white;
+	color: white;
+	border: 1px solid white !important;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
 .gradient {
-    background: linear-gradient(35deg,
-     $background-gradient);
+	background: linear-gradient(35deg, $background-gradient);
 
-    
-    background-position: center;
-    background-size: 400% 400%;
-    // background-size: 400% 400%;
-    animation-name: MOVE-BG;
-    animation-duration: 15s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+	background-position: center;
+	background-size: 400% 400%;
+	// background-size: 400% 400%;
+	animation-name: MOVE-BG;
+	animation-duration: 15s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 
-    &.alt {
-        background: transparent !important;
-    }
+	&.alt {
+		background: transparent !important;
+	}
 }
 
 @keyframes MOVE-BG {
-    from {
-        background-position: 0% 50%;
-    }
-    to {
-        background-position: 100% 50%;
-    }
+	from {
+		background-position: 0% 50%;
+	}
+	to {
+		background-position: 100% 50%;
+	}
 }
 
 .hover-icons {
-    i {
-        transition: color .2s;
-        color: white;
-        // color: $dark;
-        &.fa-linkedin:hover,
-        &.fa-linkedin-in:hover {
-            color: $linked-in-blue;
-        }
-        &.fa-github:hover {
-            color: black;
-        }
-        &.fa-instagram:hover {
-            color: black;
-        }
-        &.fa-twitter:hover {
-            color: $twitter-blue;
-        }
-        &.fa-facebook:hover {
-            color: $facebook-blue;
-        }
-        &.fa-bitbucket:hover {
-            color: $bitbucket-blue;
-        }
-        &.fa-external-link-alt:hover,
-        &.fa-link:hover {
-            color: black;
-        }
-    }
+	i {
+		transition: color 0.2s;
+		color: white;
+		// color: $dark;
+		&.fa-linkedin:hover,
+		&.fa-linkedin-in:hover {
+			color: $linked-in-blue;
+		}
+		&.fa-github:hover {
+			color: black;
+		}
+		&.fa-instagram:hover {
+			color: black;
+		}
+		&.fa-twitter:hover {
+			color: $twitter-blue;
+		}
+		&.fa-facebook:hover {
+			color: $facebook-blue;
+		}
+		&.fa-bitbucket:hover {
+			color: $bitbucket-blue;
+		}
+		&.fa-external-link-alt:hover,
+		&.fa-link:hover {
+			color: black;
+		}
+	}
 }
 
 *::-webkit-scrollbar {
-    background: transparent;
-    width: 3px;
+	background: transparent;
+	width: 3px;
 }
 
 *::-webkit-scrollbar-thumb {
-    width: 2px;
-    background-color: white;
+	width: 2px;
+	background-color: white;
 }

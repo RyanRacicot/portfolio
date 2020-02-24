@@ -4,41 +4,38 @@ $bg-color: white;
 $text-color: black;
 
 .main {
-    border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 
-    // For Resume link
-    a {
-        color: white;
-        &:hover {
-            text-decoration: none;
-        }
-    }
+	// For Resume link
+	a {
+		color: white;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 
-    
+	.btn {
+		color: white;
+		display: inline-block;
+		padding: 0.5em 1em;
+		margin: 1em;
+		border: 1px solid white;
+		font-weight: bold;
+		backdrop-filter: blur(15px);
 
-    .btn {
-        color: white;
-        display: inline-block;
-        padding: .5em 1em;
-        margin: 1em;
-        border: 1px solid white;
-        font-weight: bold;
-        backdrop-filter: blur(15px);
+		@media (max-width: 600px) {
+			padding: 0.25em;
+			margin: 0.25em;
+		}
 
-        @media (max-width: 600px) {
-            padding: .25em;
-            margin: .25em;
-        }
-        
-        transition: all .25s;
-        
-        &:focus {
-            box-shadow: none;
-            outline: 0 !important;
-        }
-        &:hover {
-            transform: scale(1.15);
-        }
-    }
-    
+		transition: all 0.25s;
+
+		&:focus {
+			box-shadow: none;
+			outline: 0 !important;
+		}
+		&:hover {
+			transform: scale(1.15);
+		}
+	}
 }
