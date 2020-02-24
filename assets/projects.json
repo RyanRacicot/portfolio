@@ -4,20 +4,21 @@
 			"title": "Polyphonic Real-Time Harmonizer",
 			"github": "https://github.com/RyanRacicot/harmonizer",
 			"imgs": ["harmonizer.png"],
-			"skills": ["Max"],
+			"skills": [{ "name": "Max" }],
 			"description": "A virtual instrument designed for live performance which retunes an input vocal signal to various output signals determined from midi input."
 		},
 		{
 			"title": "Equalizer Chrome Extension",
 			"github": "https://github.com/RyanRacicot/equalizer-chrome-extension",
 			"imgs": ["eq.png", "eq2.png", "eq3.png"],
-			"skills": ["Javascript"],
+			"skills": [{ "name": "Javascript", "fa_icon": "fab fa-js-square" }],
 			"url": "https://chrome.google.com/webstore/detail/elffpeojjidpaecfanjkacjpkohlgjfk/publish-accepted?authuser=1&hl=en",
+			"url_display_name": "View in Chrome Store",
 			"description": "Simple chrome extension with tab specific 8-band equalization.",
 			"long_description": "Audio manipulation acheived using the Web Audio API. Effective use of asynchronous functionality for fluid UI while manipulating audio streams. Well designed object oriented design allows for multiple tabs to be EQ'd at once."
 		},
 		{
-			"title": "Opera Singer Portfolio",
+			"title": "Portfolio - Rachel Kobernick",
 			"github": "https://github.com/RachelKobernick/Portfolio",
 			"imgs": [
 				"rachel-portfolio.png",
@@ -25,16 +26,19 @@
 				"rachel-portfolio-responsive-2.png",
 				"rachel-portfolio-responsive-3.png"
 			],
-			"skills": ["Angular", "Github Pages", "Continuous Deployment"],
-			"description": "A portfolio website made for a career Opera singer as a platfrom for promotional material.",
+			"skills": [
+				{ "name": "Angular", "fa_icon": "fab fa-angular" },
+				{ "name": "Continuous Deployment", "fa_icon": "fas fa-sync-alt" }
+			],
+			"description": "A portfolio website made for a professional Opera singer as a platform for promotional material.",
 			"long_description": "Responsive and elegant web design that works at all screen sizes.  Designed with ease of editability as foremost importance. Continuous Deployment through Github Actions allows for her to edit all content of the website without having any knowledge of the Angular deployment process.",
-			"url": "https://rachelkobernick.github.io/Portfolio/"
+			"url": "https://rachelkobernick.com/"
 		},
 		{
 			"title": "Hitch",
 			"bitbucket": "https://bitbucket.org/Ryan-Racicot/pool-it/src/master/",
 			"imgs": ["hitch_1.jpg", "hitch_3.jpg", "hitch_2.jpg"],
-			"skills": ["Flutter", "Dart", "Firebase"],
+			"skills": [{ "name": "Flutter" }, { "name": "Dart" }, { "name": "Firebase", "fa_icon": "fas fa-fire-alt" }],
 			"description": "A cross-platform mobile application designed for college students coordinating carpooling trips as an alternative to expensive existing forms of long-distance travel.",
 			"long_description": "I was given the UI mockups shown below, and implemented the designs using Google's Flutter, and implemented the service back-end using Firebase."
 		},
@@ -42,10 +46,16 @@
 			"title": "Repertoire Vault",
 			"github": "https://github.com/RyanRacicot/RepertoireVault",
 			"imgs": ["repertoire-vault.png"],
-			"skills": ["Angular", "Node.js", "Express", "Heroku"],
+			"skills": [
+				{ "name": "Angular", "fa_icon": "fab fa-angular" },
+				{ "name": "Node.js", "fa_icon": "fab fa-node" },
+				{ "name": "Express" },
+				{ "name": "Heroku", "fa_icon": "fas fa-rocket" }
+			],
 			"description": "Online tool designed for career musicians to track and share their performance ready repertoire. Future plans include the ability to share one's repertoire with others.",
 			"long_description": "REST application created to teach myself how to create and host a web app using a modern framework. Includes a custom implemented encyrpted login service and search functionality.",
-			"url": "https://immense-tor-11241.herokuapp.com/"
+			"url": "https://immense-tor-11241.herokuapp.com/",
+			"url_display_name": "Visit Repertoire Vault"
 		}
 	]
 }
