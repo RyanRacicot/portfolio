@@ -1,56 +1,36 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../variables';
 
-$row-height: 40px;
-
 .bg {
 	height: 100%;
-	width: 100%;
-	margin: 0;
+	overflow-y: scroll;
+	font-size: large;
 
-	#player-card {
-		width: 90vw;
-		max-width: 625px;
-		padding: 1em;
+	.card-body {
+		padding-bottom: none;
+	}
 
-		#left {
-			float: left;
-			display: grid;
-			grid-template-columns: 10% auto;
-			grid-template-rows: $row-height $row-height $row-height;
-			padding: 0.5em;
+	#main {
+		height: max-content;
+		width: 60%;
+		min-width: 360px;
+		text-align: center;
+		margin-top: 10vh;
+
+		img#headshot {
+			width: 100%;
+			max-width: 360px;
+			border-radius: 50%;
 			border: 1px solid white;
-			border-radius: 5px;
-			margin: 0.5em 0.5em 0 0.5em;
-			* {
-				line-height: $row-height;
-				vertical-align: middle;
-				margin: 0;
-			}
-			column-gap: 0.5em;
-
-			#name-icon,
-			#location-icon,
-			#education-icon,
-			#description-icon {
-				text-align: center;
-			}
-
-			.fas {
-				font-size: $row-height * 0.65;
-				line-height: $row-height;
-				vertical-align: middle;
-			}
+			padding: 0.5em;
+			margin-bottom: 1em;
 		}
 
-		h4,
-		p {
-			display: inline;
-		}
-
-		#description {
-			* {
-				display: inline;
+		a {
+			color: white;
+			&:hover {
+				text-decoration: none;
+				color: maroon;
 			}
 		}
 	}

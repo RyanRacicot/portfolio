@@ -5,12 +5,9 @@
 
 			<div id="skills">
 				<div id="badges">
-					<!-- <div id="badges" class="row justify-content-center align-content-center"> -->
 					<div class="skill-badge" *ngFor="let skill of project.skills">
-						<!-- <span class="skill-badge"> -->
 						<i *ngIf="skill.fa_icon" class="{{ skill.fa_icon }}"></i>
 						{{ skill.name }}
-						<!-- </span> -->
 					</div>
 				</div>
 			</div>
