@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router'
 import { LandingComponent } from './landing/landing.component'
 import { AboutComponent } from './about/about.component'
 import { ProjectsComponent } from './projects/projects.component'
-import { ContactComponent } from './contact/contact.component'
 import { ProjectDetailsComponent } from './project-details/project-details.component'
 
 const routes: Routes = [
@@ -31,11 +30,6 @@ const routes: Routes = [
 		path: 'projects/:id',
 		component: ProjectDetailsComponent,
 		data: { animation: 'ProjectDetailsPage' },
-	},
-	{
-		path: 'contact',
-		component: ContactComponent,
-		data: { animation: 'ContactPage' },
 	},
 ]
 

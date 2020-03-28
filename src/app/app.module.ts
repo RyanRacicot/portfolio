@@ -7,7 +7,6 @@ import { AppComponent } from './app.component'
 import { LandingComponent } from './landing/landing.component'
 import { AboutComponent } from './about/about.component'
 import { ProjectsComponent } from './projects/projects.component'
-import { ContactComponent } from './contact/contact.component'
 import { NavComponent } from './nav/nav.component'
 import { ProjectDetailsComponent } from './project-details/project-details.component'
 
@@ -17,7 +16,6 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
 		LandingComponent,
 		AboutComponent,
 		ProjectsComponent,
-		ContactComponent,
 		NavComponent,
 		ProjectDetailsComponent,
 	],
