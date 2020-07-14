@@ -3,14 +3,14 @@
 		{
 			"title": "Polyphonic Real-Time Harmonizer",
 			"github": "https://github.com/RyanRacicot/harmonizer",
-			"imgs": ["/webp/harmonizer.webp"],
+			"imgs": ["/harmonizer.png"],
 			"skills": [{ "name": "Max" }],
 			"description": "A virtual instrument designed for live performance which retunes an input vocal signal to various output signals determined from midi input."
 		},
 		{
 			"title": "Equalizer Chrome Extension",
 			"github": "https://github.com/RyanRacicot/equalizer-chrome-extension",
-			"imgs": ["/webp/eq.webp", "/webp/eq2.webp", "/webp/eq3.webp"],
+			"imgs": ["/eq.png", "/eq2.png", "/eq3.png"],
 			"skills": [{ "name": "Javascript", "fa_icon": "fab fa-js-square" }],
 			"url": "https://chrome.google.com/webstore/detail/elffpeojjidpaecfanjkacjpkohlgjfk/publish-accepted?authuser=1&hl=en",
 			"url_display_name": "View in Chrome Store",
@@ -21,10 +21,10 @@
 			"title": "Portfolio - Rachel Kobernick",
 			"github": "https://github.com/RachelKobernick/Portfolio",
 			"imgs": [
-				"/webp/rachel-portfolio.webp",
-				"/webp/rachel-portfolio-responsive-1.webp",
-				"/webp/rachel-portfolio-responsive-2.webp",
-				"/webp/rachel-portfolio-responsive-3.webp"
+				"/rachel-portfolio.png",
+				"/rachel-portfolio-responsive-1.png",
+				"/rachel-portfolio-responsive-2.png",
+				"/rachel-portfolio-responsive-3.png"
 			],
 			"skills": [
 				{ "name": "Angular", "fa_icon": "fab fa-angular" },
@@ -37,7 +37,7 @@
 		{
 			"title": "Hitch",
 			"bitbucket": "https://bitbucket.org/Ryan-Racicot/pool-it/src/master/",
-			"imgs": ["/webp/hitch_1.webp", "/webp/hitch_3.webp", "/webp/hitch_2.webp"],
+			"imgs": ["/hitch_1.jpg", "/hitch_3.jpg", "/hitch_2.jpg"],
 			"skills": [{ "name": "Flutter" }, { "name": "Dart" }, { "name": "Firebase", "fa_icon": "fas fa-fire-alt" }],
 			"description": "A cross-platform mobile application designed for college students coordinating carpooling trips as an alternative to expensive existing forms of long-distance travel.",
 			"long_description": "I was given the UI mockups shown below, and implemented the designs using Google's Flutter, and implemented the service back-end using Firebase."
@@ -45,7 +45,7 @@
 		{
 			"title": "Repertoire Vault",
 			"github": "https://github.com/RyanRacicot/RepertoireVault",
-			"imgs": ["/webp/repertoire-vault.webp"],
+			"imgs": ["/repertoire-vault.png"],
 			"skills": [
 				{ "name": "Angular", "fa_icon": "fab fa-angular" },
 				{ "name": "Node.js", "fa_icon": "fab fa-node" },
