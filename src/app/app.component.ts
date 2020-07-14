@@ -1,7 +1,6 @@
 import { Component } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
 import { pageNavigationAnimation } from './animations'
-var Trianglify = require('trianglify')
 
 @Component({
 	selector: 'app-root',

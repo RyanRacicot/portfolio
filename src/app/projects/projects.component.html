@@ -3,9 +3,6 @@
 		<div class="card pick-up gradient alt">
 			<div class="left">
 				<div class="img-wrapper">
-					<h2 class="overlay-title">
-						<b>{{ project.title }}</b>
-					</h2>
 					<img
 						*ngIf="project.imgs[0]"
 						src="assets/{{ project.imgs[0] }}"
@@ -13,6 +10,9 @@
 						alt="{{ project.imgs[0] }}"
 						routerLink="['project-details', '{{ project.title }}']"
 					/>
+					<h2 class="overlay-title">
+						<b>{{ project.title }}</b>
+					</h2>
 				</div>
 			</div>
 		</div>

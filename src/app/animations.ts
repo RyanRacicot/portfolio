@@ -14,6 +14,7 @@ import {
 let animationTimeLength = '250ms'
 
 export const pageNavigationAnimation = trigger('routeAnimations', [ProjectsPageTransition(), DefaultPageTransition()])
+// export const pageNavigationAnimation = trigger('routeAnimations', [DefaultPageTransition()])
 
 export function DefaultPageTransition() {
 	return transition('* <=> *', [
