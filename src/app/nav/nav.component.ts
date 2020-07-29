@@ -9,10 +9,10 @@ import { Router, NavigationEnd } from '@angular/router'
 export class NavComponent implements OnInit {
 	@Input() onNavigate: Function
 
-	private onProjectDetail = false
+	onProjectDetail = false
 
 	constructor(private ref: ElementRef, private router: Router) {
-		router.events.subscribe(e => {
+		router.events.subscribe((e) => {
 			if (e instanceof NavigationEnd) {
 				if (e.url == '/projects') {
 					this.onProjectDetail = false
