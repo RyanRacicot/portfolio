@@ -9,17 +9,19 @@ import { Router, NavigationEnd } from '@angular/router'
 export class NavComponent implements OnInit {
 	@Input() onNavigate: Function
 
+	private onProjectDetail = false
+
 	constructor(private ref: ElementRef, private router: Router) {
 		router.events.subscribe(e => {
 			if (e instanceof NavigationEnd) {
-				switch (e.url) {
-					case '/projects':
-						ref.nativeElement.hidden = false
-						break
-
-					default:
-						ref.nativeElement.hidden = true
-						break
+				if (e.url == '/projects') {
+					this.onProjectDetail = false
+					ref.nativeElement.hidden = false
+				} else if (!e.url.indexOf('/projects/')) {
+					this.onProjectDetail = true
+				} else {
+					this.onProjectDetail = false
+					ref.nativeElement.hidden = true
 				}
 			}
 		})

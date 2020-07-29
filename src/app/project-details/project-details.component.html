@@ -3,23 +3,24 @@
 		<div class="card-body col container">
 			<h1>{{ project.title }}</h1>
 
-			<div id="skills">
-				<div id="badges">
-					<div class="skill-badge" *ngFor="let skill of project.skills">
-						<i *ngIf="skill.fa_icon" class="{{ skill.fa_icon }}"></i>
-						{{ skill.name }}
-					</div>
-				</div>
-			</div>
-
-			<div class="divider"></div>
-
 			<div class="description">
 				<p>{{ project.description }}</p>
 				<div *ngIf="project.long_description">
 					<br />
 					<div class="long-description">
 						{{ project.long_description }}
+					</div>
+				</div>
+			</div>
+
+			<div class="divider"></div>
+
+			<div id="skills">
+				<p>Built Using:</p>
+				<div id="badges">
+					<div class="skill-badge" *ngFor="let skill of project.skills">
+						<i *ngIf="skill.fa_icon" class="{{ skill.fa_icon }}"></i>
+						{{ skill.name }}
 					</div>
 				</div>
 			</div>

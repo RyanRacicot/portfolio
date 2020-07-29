@@ -1,8 +1,9 @@
 <div class="main row gradient alt">
-	<div routerLink="" class="btn">Home</div>
-	<!-- <div routerLink="about" class="btn left-end">About</div> -->
-	<!-- <div routerLink="projects" class="btn">Projects</div> -->
-	<div class="btn">
+	<div *ngIf="!onProjectDetail" routerLink="" class="btn">Home</div>
+	<div *ngIf="onProjectDetail" routerLink="/projects" class="btn">
+		Back
+	</div>
+	<div *ngIf="!onProjectDetail" class="btn">
 		<a href="assets/Ryan Racicot Resume.pdf" target="_blank">Resume</a>
 	</div>
 </div>
